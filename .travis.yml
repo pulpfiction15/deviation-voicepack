@@ -2,7 +2,12 @@ os: osx
 language: ruby
 rvm: 2.3
 before_install: brew update
-install: brew install lame
-script: cd genspeech && ./genspeech EN
+install: 
+  - brew install lame
+  - curl https://raw.githubusercontent.com/mklement0/voices/master/bin/voices > voices.sh
+  - chmod +x voices.sh
+script: 
+  - cd genspeech && ./genspeech EN && cd ..
+  - ./voices.sh -l
 deploy:
   skip_cleanup: true
