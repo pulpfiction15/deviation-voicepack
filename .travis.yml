@@ -1,0 +1,2 @@
+os: osx
+script: : echo "test" && say -o test.aiff test
