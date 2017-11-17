@@ -1,2 +1,5 @@
 os: osx
+install: brew install lame
 script: cd genspeech && ./genspeech EN
+deploy:
+  skip_cleanup: true
