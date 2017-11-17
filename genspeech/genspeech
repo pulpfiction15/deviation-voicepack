@@ -60,7 +60,7 @@ IDX=0
 TMPFILE="/tmp/speechidx.tmp"
 OUTFILE="voice.ini"
 cp /dev/null $TMPFILE
-SPEECHDIR="mp3"
+SPEECHDIR="MP3"
 mkdir $SPEECHDIR 2>/dev/null
 rm -f ${SPEECHDIR}/* >/dev/null 2>&1
 rm -f voice.ini >/dev/null 2>&1

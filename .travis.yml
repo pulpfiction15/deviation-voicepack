@@ -1,6 +1,6 @@
 os: osx
-language: ruby
-rvm: 2.3
+language: bash
+cache: bundle 
 before_install: brew update
 install: 
   - brew install lame
@@ -8,6 +8,10 @@ install:
   - chmod +x voices.sh
 script: 
   - cd genspeech && ./genspeech EN && cd ..
-  - ./voices.sh -l
+  - say -v ?
 deploy:
+  provider: pages
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
