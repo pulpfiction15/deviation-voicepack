@@ -16,7 +16,7 @@ script:
 before_deploy:
   - mkdir release/
   - mv genspeech/*.zip release/
-  - cp iopages/* release/
+  - cp iopage/* release/
 deploy:
   provider: pages
   repo: TheRealMoeder/TheRealMoeder.github.io
