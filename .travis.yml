@@ -7,7 +7,13 @@ install:
   - curl https://raw.githubusercontent.com/mklement0/voices/master/bin/voices > voices.sh
   - chmod +x voices.sh
 script: 
-  - cd genspeech && ./genspeech EN && cd ..
+  - cd genspeech
+  - ./genspeech EN Alex
+  - ./genspeech EN Allison
+  - ./genspeech FR Thomas
+  - ./genspeech FR Amelie
+  - ./genspeech DE Anna
+  - cd ..
   - say -v ?
 before_deploy:
   - mkdir genspeech/zip
