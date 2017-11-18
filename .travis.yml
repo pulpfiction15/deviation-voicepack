@@ -9,11 +9,14 @@ install:
 script: 
   - cd genspeech && ./genspeech EN && cd ..
   - say -v ?
+before_deploy:
+  - mkdir genspeech/zip
+  - mv genspeech/*.zip genspeech/zip/*.zip
 deploy:
   provider: pages
   repo: TheRealMoeder.github.io
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: *.zip
+  local_dir: genspeech/zip
   on:
     branch: master
