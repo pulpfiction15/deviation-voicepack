@@ -1,5 +1,5 @@
 #!/bin/bash
-for INFILE in release/*.zip
+for INFILE in *.zip
 do
-	echo "[$INFILE](${INFILE})" >> index.md
+	echo "- [$INFILE](${INFILE})" >> index.md
 done
