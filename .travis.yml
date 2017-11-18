@@ -17,12 +17,13 @@ before_deploy:
   - mkdir release/
   - mv genspeech/*.zip release/
   - cp iopage/* release/
+  - ./create_index.sh && mv index.md release/
 deploy:
   provider: pages
   repo: TheRealMoeder/TheRealMoeder.github.io
   target_branch: master
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: genspeech/zip
+  local_dir: release
   on:
     branch: master
