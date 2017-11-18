@@ -11,10 +11,11 @@ script:
   - say -v ?
 before_deploy:
   - mkdir genspeech/zip
-  - mv genspeech/*.zip genspeech/zip/*.zip
+  - mv genspeech/*.zip genspeech/zip/
 deploy:
   provider: pages
   repo: TheRealMoeder/TheRealMoeder.github.io
+  target_branch: master
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: genspeech/zip
