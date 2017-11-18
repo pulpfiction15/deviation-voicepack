@@ -10,7 +10,6 @@ Querruder
 Querruder hoch
 Querruder niedrig
 Querruder mittel
-Querruder
 Luftbremse geschlossen
 Luftbremse offen
 Luftbremse

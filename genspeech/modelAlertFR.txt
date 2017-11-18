@@ -63,8 +63,6 @@ dérive moyenne
 spoiler fermé
 spoiler ouvert
 moteur
-moteur activé
-moteur désactivé
 controle moteur
 moteur débrayer
 pas 3D activé
