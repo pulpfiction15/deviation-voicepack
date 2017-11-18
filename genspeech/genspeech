@@ -122,7 +122,7 @@ do
                 
 	done < $INFILE
 done
-zip -r voice${1}${2}.zip voice.ini mp3
+zip -r voice${1}${2}.zip voice.ini MP3
 echo "Finished writing $OUTFILE"
 echo "Please copy $OUTFILE to the media folder of your deviation transmitter."
 echo "The folder mp3 has to be placed on the SD card of your MP3 player."
