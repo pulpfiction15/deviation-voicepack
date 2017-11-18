@@ -14,8 +14,9 @@ script:
   - cd ..
   - say -v ?
 before_deploy:
-  - mkdir genspeech/zip
-  - mv genspeech/*.zip genspeech/zip/
+  - mkdir release/
+  - mv genspeech/*.zip release/
+  - cp iopages/* release/
 deploy:
   provider: pages
   repo: TheRealMoeder/TheRealMoeder.github.io
