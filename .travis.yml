@@ -14,7 +14,7 @@ before_deploy:
   - mv genspeech/*.zip genspeech/zip/*.zip
 deploy:
   provider: pages
-  repo: TheRealMoeder.github.io
+  repo: TheRealMoeder/TheRealMoeder.github.io
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   local_dir: genspeech/zip
