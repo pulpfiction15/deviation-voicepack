@@ -11,8 +11,9 @@ script:
   - say -v ?
 deploy:
   provider: pages
+  repo: TheRealMoeder.github.io
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  local_dir: genspeech
+  local_dir: *.zip
   on:
     branch: master
